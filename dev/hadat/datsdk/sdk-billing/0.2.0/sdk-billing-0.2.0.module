@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.hadat.datsdk",
+    "module": "sdk-billing",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "dev.hadat.datsdk",
+          "module": "sdk-core",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.android.billingclient",
+          "module": "billing-ktx",
+          "version": {
+            "requires": "8.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-billing-0.2.0.aar",
+          "url": "sdk-billing-0.2.0.aar",
+          "size": 83612,
+          "sha512": "6bee73367f99ccd1f5083dbe659a591cb01d54ae5cf08df5057ce23237fd961bb1b6e3de9226764908b5c13b2709d17c0fe19e0d602ec59d5d75de86599abb92",
+          "sha256": "2a3caa37ef6af471c82b8fc128c2ad1bc3f70da33074af031e3a3986d34cc3d0",
+          "sha1": "a3df07d09b1ba946b2ada3232e6d0510df3284f2",
+          "md5": "dc798f3e295ec9856631d6f5e62ef72f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-process",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "dev.hadat.datsdk",
+          "module": "sdk-core",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.android.billingclient",
+          "module": "billing-ktx",
+          "version": {
+            "requires": "8.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-billing-0.2.0.aar",
+          "url": "sdk-billing-0.2.0.aar",
+          "size": 83612,
+          "sha512": "6bee73367f99ccd1f5083dbe659a591cb01d54ae5cf08df5057ce23237fd961bb1b6e3de9226764908b5c13b2709d17c0fe19e0d602ec59d5d75de86599abb92",
+          "sha256": "2a3caa37ef6af471c82b8fc128c2ad1bc3f70da33074af031e3a3986d34cc3d0",
+          "sha1": "a3df07d09b1ba946b2ada3232e6d0510df3284f2",
+          "md5": "dc798f3e295ec9856631d6f5e62ef72f"
+        }
+      ]
+    }
+  ]
+}
