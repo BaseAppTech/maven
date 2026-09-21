@@ -1,0 +1,453 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.hadat.datsdk",
+    "module": "sdk-ads",
+    "version": "0.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "dev.hadat.datsdk",
+          "module": "sdk-core",
+          "version": {
+            "requires": "0.2.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.libraries.ads.mobile.sdk",
+          "module": "ads-mobile-sdk",
+          "version": {
+            "requires": "1.4.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.7.2"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-ads-0.3.0.aar",
+          "url": "sdk-ads-0.3.0.aar",
+          "size": 328645,
+          "sha512": "fdd884cb0bad7a48793777f93219c9b8195a1a6f672d39e6c4bc7df89ea8469dcfae18808a8e040cb2f8253e51913981644d27b7dd939c65f2214b0d74401af2",
+          "sha256": "edd810fde0b8576e0a2273a4f65c513e76120675b3102a1bcde94003743250de",
+          "sha1": "9a8ef922d0ba682a8d67c0d766e2928ca23bf3c8",
+          "md5": "0a542747a1694798632271c8f57e835e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.cardview",
+          "module": "cardview",
+          "version": {
+            "requires": "1.0.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.14.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.8.7"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-process",
+          "version": {
+            "requires": "2.8.7"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.13.2"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.faltenreich",
+          "module": "skeletonlayout",
+          "version": {
+            "requires": "5.0.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.ads.mediation",
+          "module": "pangle",
+          "version": {
+            "requires": "8.3.0.3.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-ads-identifier",
+          "version": {
+            "requires": "18.2.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.ump",
+          "module": "user-messaging-platform",
+          "version": {
+            "requires": "3.0.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-bom",
+          "version": {
+            "requires": "34.13.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-analytics",
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "dev.hadat.datsdk",
+          "module": "sdk-core",
+          "version": {
+            "requires": "0.2.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.libraries.ads.mobile.sdk",
+          "module": "ads-mobile-sdk",
+          "version": {
+            "requires": "1.4.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "androidx.databinding",
+          "module": "viewbinding",
+          "version": {
+            "requires": "8.7.2"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads"
+            },
+            {
+              "group": "com.google.android.gms",
+              "module": "play-services-ads-lite"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "sdk-ads-0.3.0.aar",
+          "url": "sdk-ads-0.3.0.aar",
+          "size": 328645,
+          "sha512": "fdd884cb0bad7a48793777f93219c9b8195a1a6f672d39e6c4bc7df89ea8469dcfae18808a8e040cb2f8253e51913981644d27b7dd939c65f2214b0d74401af2",
+          "sha256": "edd810fde0b8576e0a2273a4f65c513e76120675b3102a1bcde94003743250de",
+          "sha1": "9a8ef922d0ba682a8d67c0d766e2928ca23bf3c8",
+          "md5": "0a542747a1694798632271c8f57e835e"
+        }
+      ]
+    }
+  ]
+}
